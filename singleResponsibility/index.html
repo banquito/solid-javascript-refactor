@@ -10,7 +10,7 @@
   window.onload = function() {
     var dates = document.getElementsByTagName("span");
     for ( var i = 0; i < dates.length; i++ ) {
-      dates[i].innerText = prettyDate.format(new Date(dates[i].innerText));
+      dates[i].innerText = "hace " + prettyDate.format(new Date(dates[i].innerText));
     }
   };
   </script>
