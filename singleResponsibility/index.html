@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Single Responsibility</title>
+  <script src="prettyDate.js"></script>
+  <script>
+
+  // Responsibility of change UI
+  window.onload = function() {
+    var dates = document.getElementsByTagName(selector);
+    for ( var i = 0; i < dates.length; i++ ) {
+      dates[i].innerText = prettyDate.format(new Date(dates[i].innerText));
+    }
+  };
+  </script>
+</head>
+<body>
+ 
+<ul>
+  <li>
+    <a href="http://freshbrewedcode.com/derekgreer/2011/12/08/solid-javascript-single-responsibility-principle/">
+      SOLID JavaScript: The Single Responsibility Principle
+    </a>
+    <span>2013/08/25</span>
+  </li>
+  <li>
+    <a href="http://freshbrewedcode.com/derekgreer/2011/12/19/solid-javascript-the-openclosed-principle/">
+      SOLID JavaScript: The Open/Closed Principle
+    </a>
+    <span>2013/08/24</span>
+  </li>
+  <li>
+    <a href="http://freshbrewedcode.com/derekgreer/2011/12/31/solid-javascript-the-liskov-substitution-principle/">
+      SOLID JavaScript: The Liskov Substitution Principle
+    </a>
+    <span>2013/08/23</span>
+  </li>
+  <li>
+    <a href="http://freshbrewedcode.com/derekgreer/2012/01/08/solid-javascript-the-interface-segregation-principle/">
+      SOLID JavaScript: The Interface Segregation Principle
+    </a>
+    <span>2013/08/22</span>
+  </li>
+  <li>
+    <a href="http://freshbrewedcode.com/derekgreer/2012/01/22/solid-javascript-the-dependency-inversion-principle/">
+      SOLID JavaScript: The Dependency Inversion Principle
+    </a>
+    <span>2013/08/21</span>
+  </li>
+</ul>
+ 
+</body>
+</html>
